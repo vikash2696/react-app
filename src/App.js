@@ -7,7 +7,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-     {/* <h2>This is app component</h2> */}
+     <h2></h2>
+     <Header/>
      <Video/>
     </div>
     

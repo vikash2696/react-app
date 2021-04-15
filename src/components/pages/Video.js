@@ -2,8 +2,8 @@ import React from "react";
 import YouTube from 'react-youtube';
 const Video = () => {
     const opts = {
-        height: '390',
-        width: '700',
+        height: '500',
+        width: '1000',
         action : 'syndicate' ,
         permission : 'allowed',
         playerVars: {
@@ -11,9 +11,9 @@ const Video = () => {
           autoplay: 0,
         },
       };
-      // return <YouTube videoId="lzKLyLJKFXk" opts={opts}  />;
-    
-      return <YouTube videoId="p7378GSN7EQ" opts={opts}  />;
+       return <YouTube videoId="cyizTGXj9ZA" opts={opts}  />;
+    // 
+      //return <YouTube videoId="PO31fcQdWrc" opts={opts}  />;
 }
 
 export default Video;

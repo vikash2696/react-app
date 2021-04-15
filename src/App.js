@@ -6,7 +6,7 @@ import Header from './components/layout/Header';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/> */}
      <h2></h2>
      <Header/>
      <Video/>

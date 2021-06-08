@@ -1,13 +1,40 @@
 import React, { useState } from 'react';
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
-import { ListGroup } from 'reactstrap';
-import { Link } from "react-router-dom";
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from './NavbarElement';
+
 const Header = (props) => {
   return (
     <div>
-      <ListGroup>
-        <Link className="list-group-item list-group-item-action" tag="a" to="/"action="false">Home</Link>
-     </ListGroup>
+    <Nav>
+        <Bars />
+        
+        <NavMenu>
+          <NavLink to='/' activeStyle style={{textDecoration: 'none'}}>
+            Home
+          </NavLink>
+          <NavLink to='/youtube' activeStyle style={{textDecoration: 'none'}}>
+            YouTube Video
+          </NavLink>
+          {/* <NavLink to='/about-us' activeStyle style={{textDecoration: 'none'}}>
+            About Us
+          </NavLink>
+          <NavLink to='/add-review' activeStyle style={{textDecoration: 'none'}}>
+            Add Review
+          </NavLink>
+          <NavLink to='/users' activeStyle style={{textDecoration: 'none'}}>
+            Users
+          </NavLink> */}
+          </NavMenu>
+        {/* <NavBtn>
+          <NavBtnLink to='/' style={{textDecoration: 'none'}}>Welcome to Technology</NavBtnLink>
+        </NavBtn> */}
+      </Nav>
     </div>
   );
 }

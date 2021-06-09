@@ -23,24 +23,16 @@ const style = {
   };
 const AboutUs = ( {style}) => {
   return (
-    <div>
-     Every method in the fs module has synchronous as well as asynchronous forms.
-        Asynchronous methods take the last parameter as the completion function callback 
-        and the first parameter of the callback function as error. It is better to 
-        use an asynchronous method instead of a synchronous method, as the former
-         never blocks a program during its execution, whereas the second one does.
+    <div style={{marginTop:20}}>
+      <h3><b>Watch YouTube video ad Free Free!!!</b></h3>
 
-         Every method in the fs module has synchronous as well as asynchronous forms.
-        Asynchronous methods take the last parameter as the completion function callback 
-        and the first parameter of the callback function as error. It is better to 
-        use an asynchronous method instead of a synchronous method, as the former
-         never blocks a program during its execution, whereas the second one does.
+      <h6>Enjoy watching ad free YouTube Video on this platform. You need to copy 
+        paste the youtube url or youtube video ID in the input box and play your 
+        favourite video without any intervention.
 
-         Every method in the fs module has synchronous as well as asynchronous forms.
-        Asynchronous methods take the last parameter as the completion function callback 
-        and the first parameter of the callback function as error. It is better to 
-        use an asynchronous method instead of a synchronous method, as the former
-         never blocks a program during its execution, whereas the second one does.
+      </h6>
+
+      <h1>Go to "YouTube Video Tab or Click Here: <a href="https://vikapp1.herokuapp.com/youtube">YouTube Video</a></h1>
     </div>
   );
 };

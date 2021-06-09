@@ -21,7 +21,7 @@ const YoutubeVideo = () => {
     height: '500'
 };
 const urlWidth = {
-  width:'500px'
+  width:'80%'
 }
 const formHandler = (e) => {
   if(validateYouTubeUrl(url)) {
@@ -46,11 +46,9 @@ function validateYouTubeUrl(url)
 
 
 function youtube_parser(url){
-  console.log('in video parser function');
   var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
   var match = url.match(regExp);
   var vid =  (match&&match[7].length==11)? match[7] : false;
-  console.log('vid', vid);
   return vid;
 }
 

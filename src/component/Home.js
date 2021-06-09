@@ -15,7 +15,7 @@ import AboutUs from "../component/pages/AboutUs";
 const Home = () => {
   const [classes, setClasses] = useState([]);
   useEffect(() => {
-    document.title = "Home";
+    document.title = "Vikash YouTube Video player";
     fetchUsers();
   }, []);
 

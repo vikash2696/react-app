@@ -7,7 +7,7 @@ const AddReview = () => {
   }, []);
 
   const [review, setReview] = useState({});
-  //form handler function
+  //form handler function Enter YouTube video ID: For ex: XCElIIYx_8s
   const formHandler = (e) => {
     console.log("data", review);
     e.preventDefault();

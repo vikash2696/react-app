@@ -3,7 +3,6 @@ import YouTube from 'react-youtube';
 import { Container, Row, Col,Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const YoutubeVideo = () => {
-  // const [title, setTitle] = useState('')
   useEffect(() => {
     document.title = "Vikash's YouTube Player";
   }, []);
@@ -52,22 +51,23 @@ function youtube_parser(url){
   return vid;
 }
 
-  return  <div className="">
+  return  <div className="video-responsive">
     <Container>
           <Row>
           <Col md={12} className="videoUrl">
              <Form onSubmit={formHandler}>
               <FormGroup>
+              <Label for="videoURL">YouTube URL or VideoID : </Label>
                 <Input
                   type="text"
                   style={urlWidth}
-                  placeholder="Enter YouTube video ID: For ex: XCElIIYx_8s"
+                  placeholder="Enter YouTube video URL or ID: For ex: XCElIIYx_8s"
                   name="videoURL"
                   // value={url}
                   id="videoURL"
                   onChange={e => setURL(e.target.value)}
                 />
-                 <Button type="submit" color="success">
+                 <Button type="submit"style={{marginTop:10}} color="success">
                 Play this
               </Button>
               </FormGroup>

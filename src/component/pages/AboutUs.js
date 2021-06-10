@@ -1,13 +1,8 @@
 import React from "react";
+
 import {
-  Card,
-  CardText,
-  CardBody,
-  CardTitle,
-  Button,
-  Container,
-} from "reactstrap";
-import Speech from 'react-speech';
+  NavLink,
+} from '../layout/NavbarElement';
 
 const style = {
    
@@ -31,8 +26,11 @@ const AboutUs = ( {style}) => {
         favourite video without any intervention.
 
       </h6>
-
-      <h1>Go to "YouTube Video Tab or Click Here: <a href="https://vikapp1.herokuapp.com/youtube">YouTube Video</a></h1>
+      
+      <h1>Go to YouTube Video Tab or <b><NavLink to='/youtube' activeStyle style={{textDecoration: 'none', color:'red'}}>
+                       ---CLICK HERE---
+          </NavLink>
+        </b></h1>
     </div>
   );
 };
